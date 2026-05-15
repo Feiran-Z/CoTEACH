@@ -15,6 +15,8 @@ export default function Home() {
   const outputRef = useRef<HTMLDivElement>(null);
   const eventSourceRef = useRef<EventSource | null>(null);
 
+  const API_URL = process.env.NEXT_PUBLIC_API_URL;
+
   // Auto-scroll output
   useEffect(() => {
     if (outputRef.current) {
@@ -40,7 +42,7 @@ export default function Home() {
     }
 
     const eventSource = new EventSource(
-      `http://localhost:8000/run?${new URLSearchParams(formData as any).toString()}`
+      `${API_URL}${new URLSearchParams(formData as any).toString()}`
     );
     eventSourceRef.current = eventSource;
 
@@ -188,7 +190,8 @@ function VerifyButton() {
   const handleVerify = async () => {
     setLoading(true);
     try {
-      const res = await fetch('http://localhost:8000/verify');
+      const API_URL = process.env.NEXT_PUBLIC_API_URL
+      const res = await fetch(`${API_URL}/verify`);
       const data = await res.json();
       const parts = [];
       if (data.mcps_not_installed?.length) parts.push(`MCP missing: ${data.mcps_not_installed.join(', ')}`);
@@ -230,7 +233,8 @@ function InstallButton() {
     formData.append('install_skills', '["docx","pptx"]');  // or fetch from verify endpoint
 
     try {
-      const res = await fetch('http://localhost:8000/install', { method: 'POST', body: formData });
+      const API_URL = process.env.NEXT_PUBLIC_API_URL
+      const res = await fetch(`${API_URL}/install`, { method: 'POST', body: formData });
       const data = await res.json();
       if (data.errors?.length) {
         setMessage(`Errors: ${data.errors.join(', ')}`);

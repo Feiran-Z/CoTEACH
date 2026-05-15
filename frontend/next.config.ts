@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   basePath: 'CoTEACH/frontend',  // your repo name
   images: { unoptimized: true },
   env: {
-    NEXT_PUBLIC_API_URL: 'https://coteach-backend.onrender.com'  // Render URL
+    NEXT_PUBLIC_API_URL: 'https://coteach-2q9m.onrender.com/'  // Render URL
   }
 }
 
