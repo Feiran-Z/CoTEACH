@@ -220,7 +220,6 @@ class AgentGUI:
             dialog = CTkInputDialog(
                 title="Exa API Key",
                 text="Enter your Exa API key:",
-                show="*"
             )
             exa_key = dialog.get_input()
             if not exa_key:
