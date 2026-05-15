@@ -19,9 +19,9 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",                     # local dev
-        "https://coteach-frontend.vercel.app",       # production Vercel
+        "https://co-teach-three.vercel.app",       # production Vercel
         # optional: allow preview deployments
-        "https://coteach-frontend-git-*.vercel.app",
+        "https://co-teach-*-feiran-zhang-s-projects.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
@@ -29,7 +29,7 @@ app.add_middleware(
 )
 
 # ---------- Configuration ----------
-AGENT_DIR = Path("CoTEACH").resolve()
+AGENT_DIR = Path(__file__).parent
 REQUIRED_MCPS = ["exa"]
 REQUIRED_SKILLS = ["docx", "pptx", "xlsx", "pdf"]
 DEFAULT_MODEL = "deepseek-v4-flash"
