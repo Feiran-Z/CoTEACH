@@ -18,7 +18,10 @@ app = FastAPI(title="CoTEACH Web")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://Feiran-Z.github.io"  # your GitHub Pages URL
+        "http://localhost:3000",                     # local dev
+        "https://coteach-frontend.vercel.app",       # production Vercel
+        # optional: allow preview deployments
+        "https://coteach-frontend-git-*.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
