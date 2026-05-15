@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: coteach-backend
+    name: backend
     runtime: python
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT

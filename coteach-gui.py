@@ -16,7 +16,7 @@ class AgentGUI:
         self.root = root
         self.root.title("CoTEACH Agent GUI")
         self.root.geometry("900x750")
-        self.agent_dir = Path("/Users/teacher/Desktop/CoTEACH GUI").resolve()  # adjust path if needed
+        self.agent_dir = Path("/Users/teacher/Desktop/CoTEACH").resolve()  # adjust path if needed
 
         # --- User inputs ---
         # Folder selection
