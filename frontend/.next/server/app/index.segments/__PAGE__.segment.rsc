@@ -1,0 +1,9 @@
+1:"$Sreact.fragment"
+2:I[47257,["/CoTEACH/_next/static/chunks/0dbhjjzl8qfwv.js"],"ClientPageRoot"]
+3:I[31713,["/CoTEACH/_next/static/chunks/0dbhjjzl8qfwv.js","/CoTEACH/_next/static/chunks/08pf-2ynm.2_f.js"],"default"]
+6:I[97367,["/CoTEACH/_next/static/chunks/0dbhjjzl8qfwv.js"],"OutletBoundary"]
+7:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/CoTEACH/_next/static/chunks/08pf-2ynm.2_f.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"Jv-cpDI7fmGUl0GLw1qqC"}
+4:{}
+5:"$0:rsc:props:children:0:props:serverProvidedParams:params"
+8:null
