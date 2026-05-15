@@ -42,7 +42,7 @@ export default function Home() {
     }
 
     const eventSource = new EventSource(
-      `${API_URL}${new URLSearchParams(formData as any).toString()}`
+      `${API_URL}/run?${new URLSearchParams(formData as any).toString()}`
     );
     eventSourceRef.current = eventSource;
 
