@@ -1,7 +1,12 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  output: 'export',
+  basePath: 'CoTEACH/frontend',  // your repo name
+  images: { unoptimized: true },
+  env: {
+    NEXT_PUBLIC_API_URL: 'https://coteach-backend.onrender.com'  // Render URL
+  }
+}
 
-export default nextConfig;
+export default nextConfig
