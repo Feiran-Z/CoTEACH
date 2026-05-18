@@ -9,9 +9,11 @@
 ## Set up
 1. Download this repository as a zip
 2. Unzip the files into a folder
-3. In your terminal (e.g., Bash, PowerShell, CMD, etc.), run the following:
+3. In your terminal (e.g., Bash, PowerShell, CMD, etc.), run the following to compile the executable:
    ```bash
    cd path/to/your/unzipped/folder/
    pip install -r requirements.txt
-   pyinstaller --onefile 
+   pyinstaller --onefile coteach-gui.py
    ```
+4. Run the compiled executable file under the `dist/` subfolder
+5. Enjoy
