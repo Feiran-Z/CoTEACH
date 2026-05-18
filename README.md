@@ -7,4 +7,11 @@
 4. Exa API Key: Obtainable for free from [Exa.ai](https://exa.ai/)
 
 ## Set up
-1. 
+1. Download this repository as a zip
+2. Unzip the files into a folder
+3. In your terminal (e.g., Bash, PowerShell, CMD, etc.), run the following:
+   ```bash
+   cd path/to/your/unzipped/folder/
+   pip install -r requirements.txt
+   pyinstaller --onefile 
+   ```
